@@ -1,0 +1,491 @@
+* {
+  font-family: 'Abril Fatface', cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 99.5vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+input {
+  background-color: rgb(65, 172, 154);
+}
+
+.App {
+  position: relative;
+}
+
+/* Header */
+.header {
+  background-color: rgb(60, 156, 140);
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerText {
+  text-align: center;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  width: 240px;
+  padding-bottom: 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.headerText:hover {
+  text-decoration: underline;
+  color: rgb(213, 174, 43)
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(60, 156, 140);
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.credit {
+  font-size: 12px;
+  color: rgb(126, 69, 38);
+}
+
+.credit a,
+.dxnCredit a {
+  color: rgb(126, 69, 38);
+}
+
+.everythingButFooter {
+  padding-bottom: 80px;
+}
+
+.navigBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbars */
+.navbutton {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.navbutton:hover {
+  color: rgb(213, 174, 43);
+}
+
+/* Background */
+.guestContainer,
+.checklistSection,
+.wishlistSection,
+.roleSection,
+.tableContainer,
+.seatingChartSection {
+  background-image: url("../src/images/PlannerBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Home */
+.home {
+  width: 100%;
+  background-image: url("../src/images/PlannerBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Countdown */
+.countdownSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.countdownContainer {
+  width: 200px;
+  height: 200px;
+  color: rgb(174, 122, 44);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(1, 40, 34);
+}
+
+/* To dos */
+.to-do-app {
+  width: 100%;
+  min-height: 160px;
+  background: rgba(4, 36, 31, 0.873);
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  width: 450px;
+  color: #fff;
+  margin: 60px auto auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2px;
+  color: rgb(174, 122, 44);
+}
+
+.to-do-input {
+  width: 320px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 2px solid rgb(60, 156, 140);
+  color: #fff;
+  padding-left: 5px;
+}
+
+.to-do-input:active {
+  width: 320px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 2px solid rgb(60, 156, 140);
+  color: #fff;
+  padding-left: 5px;
+}
+
+.to-do-button {
+  height: 40px;
+  width: 70px;
+  font-size: ;
+  font-weight: 700;
+  background-color: rgb(60, 156, 140);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid rgb(60, 156, 140);
+  cursor: pointer;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: rgb(60, 156, 140);
+}
+
+.todo-row:nth-child(4n+1) {
+  background-color: rgb(8, 81, 71);
+}
+
+.todo-row:nth-child(4n+2) {
+  background-color: rgb(192, 233, 226);
+}
+
+.todo-row:nth-child(4n+3) {
+  background-color: rgb(134, 212, 199);
+}
+
+.complete {
+  opacity: 0.5;
+}
+
+span {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkparent {
+  position: relative;
+  border: 2px solid #fffdfd;
+}
+
+.check {
+  visibility: hidden;
+}
+
+.checkComplete {
+  visibility: visible;
+}
+
+/* Checklist */
+.checklistSection {
+  min-height: 535px;
+}
+
+.checklistItem {
+  padding: 20px;
+}
+
+.checklistSection h6 {
+  background-color: rgb(65, 172, 154);
+  margin-top: 10px;
+  padding: 2px 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+
+.checklistContainer {
+  background-color: rgba(255, 255, 255, 0.76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.list {
+  min-height: 50px;
+}
+
+.checked {
+  position: relative;
+  border: 2px solid black;
+}
+
+/* Guest */
+.guestContainer {
+  width: 100%;
+  min-height: 72vh;
+
+  display: flex;
+  align-content: center;
+}
+
+.top {
+  padding-top: 30px;
+}
+
+.guests {
+  background-color: rgba(255, 255, 255, 0.393);
+  margin: 30px;
+  border-radius: 5px;
+  color: rgb(1, 40, 34);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.guestName {
+  width: 100%;
+  margin-right: 10px;
+  background-color: rgba(11, 137, 105, 0.197);
+  border: none;
+  border-bottom: 2px double rgb(12, 65, 57);
+}
+
+.guestNumber {
+  width: 60%;
+  margin-right: 10px;
+  background-color: rgba(11, 137, 105, 0.197);
+  border: none;
+  border-bottom: 2px double rgb(12, 65, 57);
+}
+
+.guestGroup {
+  width: 90%;
+  margin-right: 10px;
+  background-color: rgba(11, 137, 105, 0.197);
+  border: none;
+  border-bottom: 2px double rgb(12, 65, 57);
+}
+
+.guestRSVP {
+  width: 30%;
+  margin-right: 10px;
+  background-color: rgba(11, 137, 105, 0.197);
+  border: none;
+  border-bottom: 2px double rgb(12, 65, 57);
+}
+
+.guestPlusOne {
+  width: 40%;
+  margin-right: 10px;
+  background-color: rgba(11, 137, 105, 0.197);
+  border: none;
+  border-bottom: 2px double rgb(12, 65, 57);
+}
+
+.guestListButton {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(60, 156, 140);
+  color: white;
+  width: 70px;
+  margin: 2px 3px;
+  padding: 5px;
+}
+
+.guestListButton:hover {
+  background-color: rgb(213, 174, 43);
+}
+
+/* Wishlist */
+.wishlistSection {
+  min-height: 535px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.331);
+  text-align: center;
+}
+
+.cardImage {
+  padding: 10px;
+  border-radius: 18px;
+}
+
+.wishlistButton {
+  background-color: transparent;
+  border: 2px solid rgb(65, 172, 154);
+  color: rgb(8, 81, 71);
+}
+
+.wishlistButton:hover {
+  background-color: transparent;
+  border: 2px solid rgb(174, 122, 44);
+  color: rgb(8, 81, 71);
+}
+
+/* Role */
+.roleSection {
+  min-height: 535px;
+}
+
+.roleHeader {
+  width: 100%;
+}
+
+.roleSection h1 {
+  background-color: rgba(8, 81, 71, 0.939);
+  margin: 0 auto auto;
+}
+
+.roleName {
+  width: 150px;
+  display: flex;
+  align-content: center;
+}
+
+.roleRole {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roleRole .deleteIcon:hover {
+  color: rgb(174, 122, 44);
+}
+
+.roleForm {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.roleButton {
+  color: rgb(174, 122, 44);
+  background-color: rgb(5, 80, 67);
+  border: 2px solid rgb(5, 80, 67);
+}
+
+.roleButton:hover {
+  color: rgb(174, 122, 44);
+  background-color: rgb(5, 80, 67);
+  border: 2px solid rgb(174, 122, 44);
+}
+
+/* Seating */
+.tableButton {
+  background-color: rgb(5, 80, 67);
+  border: 2px solid rgb(5, 80, 67);
+  color: white;
+}
+
+/* Invite */
+.inviteHome {
+  margin-top: 30px;
+}
+
+.inviteSection {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inviteContainer {
+  background-color: rgba(245, 254, 253, 0.659);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+}
+
+.inviteContainer h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+.inviteContainer h4 {
+  font-family: 'Alex Brush', cursive;
+  color: rgb(5, 80, 67);
+  margin: 0 60px;
+}
+
+/* Seating Chart */
+.seatingChartSection {
+  min-height: 70vh;
+  padding: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.seatingChartContainer {
+  background-color: rgba(255, 255, 255, 0.595);
+  width: 100%;
+  padding: 20px;
+}
+
+.seatingChartContainer h3 {
+  text-align: center;
+  color: rgb(174, 122, 44);
+}
+
+.tablelist {
+  background-color: rgba(192, 233, 226, 0.66);
+  padding: 10px;
+  border-radius: 10px;
+}
