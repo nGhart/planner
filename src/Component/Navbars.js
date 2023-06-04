@@ -11,42 +11,42 @@ const Navbars = () => {
           <Col xs={{ span: 10, offset: 1 }}>
             <Row>
               <Col className='nomargin'>
-                <NavLink to="/" activeClassName="active">
+                <NavLink to="/">
                   <button className='navbutton'>
                     Home
                   </button>
                 </NavLink>
               </Col>
               <Col>
-                <NavLink activeClassName="active" to="checklist">
+                <NavLink to="checklist">
                   <button className='navbutton'>
                     Checklist
                   </button>
                 </NavLink>
               </Col>
               <Col>
-                <NavLink activeClassName="" to="guests">
+                <NavLink to="guests">
                   <button className='navbutton'>
                     Guests
                   </button>
                 </NavLink>
               </Col>
               <Col>
-                <NavLink activeClassName="active" to="wishlist">
+                <NavLink to="wishlist">
                   <button className='navbutton'>
                     Wishlist
                   </button>
                 </NavLink>
               </Col>
               <Col>
-                <NavLink activeClassName="active" to="roles">
+                <NavLink to="roles">
                   <button className='navbutton'>
                     Roles
                   </button>
                 </NavLink>
               </Col>
               <Col>
-                <NavLink activeClassName="active" to="seatingchart">
+                <NavLink to="seatingchart">
                   <button className='navbutton'>
                     Seating Chart
                   </button>
