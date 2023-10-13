@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 function Countdown() {
   const [days, setDays] = useState(0);
 
-  const deadline = "August, 12, 2023";
+  const deadline = "August, 12, 2024";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
